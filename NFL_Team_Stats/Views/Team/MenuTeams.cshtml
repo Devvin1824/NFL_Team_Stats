@@ -1,0 +1,54 @@
+﻿<div class="text-center">
+    <h1 style="font-weight: bold; font-size: 75px;" class="display-4">@ViewData["teamName"] @ViewData["selectedYear"]</h1>
+       <p style="font-size: 35px">
+          Choose a team statistic to view
+       </p>
+</div>
+<div style="background-image: url('https://cdn.wallpapersafari.com/81/28/GbR3Af.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <form asp-controller="Team" asp-action="TeamWinsLosses" asp-route-team="@ViewData["teamName"].ToString()" asp-route-year="@ViewData["selectedYear"]">
+        <input type="submit" value="Wins/Losses" class="btn btn-primary" />
+    </form>
+    <br />
+    <p> </p>
+    <p> </p> 
+    <p> </p>
+    <br />
+    <form asp-controller="TeamPassing" asp-action="TeamStatsPassingWindow" asp-route-team="@ViewData["teamName"].ToString()" asp-route-year="@ViewData["selectedYear"]">
+        <input type="submit" value="Passing" class="btn btn-primary" />
+    </form>
+    <br />
+    <p></p>
+    <p></p>
+    <p></p>
+    <br />
+    <form asp-controller="Team" asp-action="TeamRushingStats" asp-route-team="@ViewData["teamName"].ToString()" asp-route-year="@ViewData["selectedYear"]">
+        <input type="submit" value="Rushing" class="btn btn-primary" />
+    </form>
+    <br />
+    <p></p>
+    <p></p>
+    <p></p>
+    <br />
+    <form asp-controller="Team" asp-action="TeamReceivingStats" asp-route-team="@ViewData["teamName"].ToString()" asp-route-year="@ViewData["selectedYear"]">
+        <input type="submit" value="Receiving" class="btn btn-primary" />
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
+
+
